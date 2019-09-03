@@ -1,0 +1,635 @@
+[
+  {
+    "schema": "edw_mcf_hist_stg",
+    "table_name": "cust_return_hist",
+    "f0_": [
+      {
+        "op": "Join: acx_ghost_date, acx_idb_addr_change_flag, acx_idb_hh_change_flag, acx_idb_indiv_change_flag, acx_idb_new_address_id, acx_idb_new_household_id, acx_idb_new_individual_id, acx_idb_new_preferred_address_flag, acx_idb_new_preferred_individual_flag, acx_idb_old_address_id, acx_idb_old_household_id, acx_idb_old_individual_id, acx_idb_old_preferred_address_flag, acx_idb_old_preferred_individual_flag, acx_idb_pref_addr_change_flag, acx_idb_pref_indiv_change_flag, acx_new_cust_addr_date, acx_new_ghost_addr_type, acx_prev_cust_addr_date, acx_prev_ghost_addr_type, acx_prev_ghost_date, acx_seq_id, cust_country_iso3;Constant: active_rec",
+        "cnt": "38.0"
+      },
+      {
+        "op": "Join: acx_idb_new_individual_id",
+        "cnt": "37.0"
+      },
+      {
+        "op": "Join: acx_ghost_date, acx_idb_addr_change_flag, acx_idb_hh_change_flag, acx_idb_indiv_change_flag, acx_idb_new_address_id, acx_idb_new_household_id, acx_idb_new_individual_id, acx_idb_new_preferred_address_flag, acx_idb_new_preferred_individual_flag, acx_idb_old_address_id, acx_idb_old_household_id, acx_idb_old_individual_id, acx_idb_old_preferred_address_flag, acx_idb_old_preferred_individual_flag, acx_idb_pref_addr_change_flag, acx_idb_pref_indiv_change_flag, acx_new_cust_addr_date, acx_new_ghost_addr_type, acx_prev_cust_addr_date, acx_prev_ghost_addr_type, acx_prev_ghost_date, cust_country_iso3, filler2;Constant: active_rec, filler2",
+        "cnt": "38.0"
+      },
+      {
+        "op": "Join: acx_seq_id, filler2;Constant: active_rec",
+        "cnt": "21.0"
+      },
+      {
+        "op": "Constant: acx_seq_id",
+        "cnt": "22.0"
+      },
+      {
+        "op": "Join: concept, formatt;Constant: active_rec, acx_seq_id, acx_valid_email_1_, acx_valid_email_2, concept, formatt",
+        "cnt": "14.0"
+      },
+      {
+        "op": "Join: acx_idb_new_address_id;Constant: acx_idb_new_address_id",
+        "cnt": "10.0"
+      },
+      {
+        "op": "Join: acx_idb_new_household_id;Constant: acx_idb_new_household_id",
+        "cnt": "10.0"
+      },
+      {
+        "op": "Join: acx_seq_id;Constant: active_rec",
+        "cnt": "150.0"
+      },
+      {
+        "op": "Join: acx_idb_old_address_id;Constant: acx_idb_old_address_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Join: acx_seq_id;Constant: active_rec, acx_city_name, acx_primary_address",
+        "cnt": "54.0"
+      },
+      {
+        "op": "Join: acx_idb_new_individual_id;Constant: active_rec, acx_seq_id, acx_valid_email_1_, acx_valid_email_2, concept, formatt",
+        "cnt": "16.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_first_name, acx_lastname, acx_primary_address",
+        "cnt": "15.0"
+      },
+      {
+        "op": "Join: acx_seq_id, filler2;Constant: active_rec, filler2",
+        "cnt": "38.0"
+      },
+      {
+        "op": "Join: acx_seq_id;Constant: active_rec, acx_seq_id",
+        "cnt": "59.0"
+      },
+      {
+        "op": "Join: acx_seq_id",
+        "cnt": "13.0"
+      },
+      {
+        "op": "Constant: job_log_id",
+        "cnt": "19.0"
+      },
+      {
+        "op": "Constant: cust_email_1, cust_first_name, cust_last_name",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: filler2;Constant: active_rec",
+        "cnt": "38.0"
+      },
+      {
+        "op": "Join: acx_idb_new_individual_id;Constant: acx_idb_new_individual_id",
+        "cnt": "10.0"
+      },
+      {
+        "op": "Constant: acx_idb_new_individual_id, acx_idb_old_individual_id",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: acx_idb_old_individual_id;Constant: acx_idb_old_individual_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_idb_old_individual_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: acx_idb_new_individual_id, acx_seq_id;Constant: active_rec",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_valid_email_1_",
+        "cnt": "16.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_idb_new_individual_id, acx_seq_id, acx_valid_email_1_",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: acx_idb_new_individual_id;Constant: active_rec, acx_seq_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: acx_seq_id, hist_load_ts;Constant: active_rec",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_first_name, acx_lastname, acx_primary_address, acx_valid_email_1_",
+        "cnt": "6.0"
+      },
+      {
+        "op": "Join: acx_idb_old_household_id;Constant: acx_idb_old_household_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: acx_valid_email_1_",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_idb_new_individual_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_seq_id, acx_valid_email_1_",
+        "cnt": "4.0"
+      },
+      {
+        "op": "Constant: acx_idb_new_address_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: acx_idb_new_individual_id",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Constant: active_rec",
+        "cnt": "29.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_city_name, acx_first_name, acx_lastname, acx_primary_address, acx_state, acx_zip4, acx_zipcode",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: acx_seq_id;Constant: bbb_rec",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Constant: cust_email_1",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_seq_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: active_rec, acx_primary_address",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: registry_number",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: cust_phone_1",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: filler3",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: acx_idb_new_address_id",
+        "cnt": "1.0"
+      }
+    ],
+    "a": "active_rec, acx_seq_id, acx_valid_email_1_, acx_valid_email_2, concept, formatt"
+  },
+  {
+    "schema": "edw_mcf_vw",
+    "table_name": "ced_ev_hdr",
+    "f0_": [
+      {
+        "op": "Constant: ced_ev_type_id, concept_format_id, email_address_id, ev_captrd_dt",
+        "cnt": "175.0"
+      },
+      {
+        "op": "Join: barcd_1;Constant: barcd_1, ced_ev_type_id, create_ts",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: barcd_4;Constant: barcd_1, barcd_2, barcd_3, barcd_4, ced_ev_type_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Join: email_address_id, launch_id;Constant: ced_ev_type_id, concept_format_id, ev_captrd_dt",
+        "cnt": "36.0"
+      },
+      {
+        "op": "Join: acct_id, barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, coupon_barcode_id1, coupon_barcode_id2, coupon_barcode_id3, coupon_barcode_id4, coupon_barcode_id5, launch_id;Constant: barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, ced_ev_type_id, concept_format_id, coupon_barcode_id1, coupon_barcode_id2, coupon_barcode_id3, coupon_barcode_id4, coupon_barcode_id5",
+        "cnt": "20.0"
+      },
+      {
+        "op": "Join: concept_format_id, launch_id;Constant: ev_captrd_dt",
+        "cnt": "35.0"
+      },
+      {
+        "op": "Join: concept_format_id;Constant: ev_captrd_dt",
+        "cnt": "6.0"
+      },
+      {
+        "op": "Join: email_address_id, launch_id;Constant: ced_ev_type_id, concept_format_id",
+        "cnt": "17.0"
+      },
+      {
+        "op": "Join: ced_ev_row_id, email_address_id, launch_id, srcsys_campn_id",
+        "cnt": "32.0"
+      },
+      {
+        "op": "Constant: ev_captrd_dt",
+        "cnt": "378.0"
+      },
+      {
+        "op": "Join: email_address_id, launch_id;Constant: ced_ev_type_id, ev_captrd_dt",
+        "cnt": "70.0"
+      },
+      {
+        "op": "Constant: cell_cd, ev_captrd_dt",
+        "cnt": "13.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ced_ev_type_id, ev_captrd_dt",
+        "cnt": "22.0"
+      },
+      {
+        "op": "Join: barcd_1, email_address_id, launch_id;Constant: barcd_1, ced_ev_type_id, concept_format_id, ev_captrd_dt",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: concept_format_id, email_address_id, launch_id;Constant: ced_ev_type_id",
+        "cnt": "131.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, concept_format_id, ev_strd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, coupon_barcode_id1, create_ts",
+        "cnt": "30.0"
+      },
+      {
+        "op": "Join: concept_format_id, email_address_id, launch_id;Constant: ced_ev_type_id, ev_captrd_dt",
+        "cnt": "37.0"
+      },
+      {
+        "op": "Join: concept_format_id, email_address_id, launch_id;Constant: ced_ev_type_id, email_address_id",
+        "cnt": "32.0"
+      },
+      {
+        "op": "Join: concept_format_id, email_address_id, launch_id;Constant: ced_ev_type_id, email_address_id, ev_captrd_dt",
+        "cnt": "14.0"
+      },
+      {
+        "op": "Join: barcd_1, barcd_2, barcd_3, barcd_4, barcd_5;Constant: ced_ev_type_id, coupon_barcode_id1, coupon_barcode_id2, coupon_barcode_id3, coupon_barcode_id4, coupon_barcode_id5, ev_captrd_dt",
+        "cnt": "29.0"
+      },
+      {
+        "op": "Join: concept_format_id, email_address_id, launch_id;Constant: email_address_id, ev_captrd_dt",
+        "cnt": "4.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, concept_format_id, email_address_id",
+        "cnt": "9.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: ced_ev_type_id, ev_captrd_dt",
+        "cnt": "4.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: barcd_1, ced_ev_type_id, ev_captrd_dt",
+        "cnt": "23.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: ced_ev_type_id, concept_format_id, launch_id",
+        "cnt": "9.0"
+      },
+      {
+        "op": "Join: barcd_1, launch_id;Constant: barcd_1, ced_ev_type_id, ev_captrd_dt",
+        "cnt": "6.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, concept_format_id, ev_captrd_dt",
+        "cnt": "22.0"
+      },
+      {
+        "op": "Join: barcd_3;Constant: barcd_1, barcd_2, barcd_3, ced_ev_type_id, create_ts",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: barcd_5;Constant: barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, ced_ev_type_id, create_ts",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: concept_format_id, launch_id;Constant: email_address_id, ev_captrd_dt",
+        "cnt": "8.0"
+      },
+      {
+        "op": "Join: barcd_2;Constant: barcd_1, barcd_2, ced_ev_type_id, create_ts",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: barcd_1, ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "4.0"
+      },
+      {
+        "op": "Join: barcd_3;Constant: barcd_1, barcd_2, barcd_3, ced_ev_type_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Join: concept_format_id, email_address_id, launch_id;Constant: ev_captrd_dt",
+        "cnt": "26.0"
+      },
+      {
+        "op": "Constant: barcd_1, ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "17.0"
+      },
+      {
+        "op": "Join: ced_ev_type_id, email_address_id, launch_id, srcsys_campn_id;Constant: ev_captrd_dt",
+        "cnt": "10.0"
+      },
+      {
+        "op": "Join: barcd_5;Constant: barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, ced_ev_type_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: cell_cd, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: concept_format_id, ev_captrd_dt, launch_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ced_ev_type_id, email_address_id, ev_captrd_dt",
+        "cnt": "9.0"
+      },
+      {
+        "op": "Constant: barcd_1, ced_ev_type_id, email_address_id, ev_captrd_dt",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: ced_ev_type_id, ev_captrd_dt, ri_id",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: ced_ev_type_id, concept_format_id, ev_captrd_dt, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, launch_id",
+        "cnt": "6.0"
+      },
+      {
+        "op": "Join: email_address_id, launch_id;Constant: ced_ev_type_id, concept_format_id, launch_id",
+        "cnt": "4.0"
+      },
+      {
+        "op": "Constant: barcd_1, email_address_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: acct_id, barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, coupon_barcode_id1, coupon_barcode_id2, coupon_barcode_id3, coupon_barcode_id4, coupon_barcode_id5, launch_id;Constant: barcd_1, barcd_2, barcd_3, barcd_4, barcd_5, ced_ev_type_id, concept_format_id, coupon_barcode_id1, coupon_barcode_id2, coupon_barcode_id3, coupon_barcode_id4, coupon_barcode_id5, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: ced_ev_row_id, ced_ev_type_id, launch_id;Constant: create_ts, update_ts",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: barcd_1;Constant: barcd_1, ced_ev_type_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: cell_cd, concept_format_id, ev_captrd_dt, launch_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ced_ev_type_id, concept_format_id, ev_captrd_dt",
+        "cnt": "11.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ced_ev_type_id, cell_cd, ev_captrd_dt",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: barcd_2;Constant: barcd_1, barcd_2, ced_ev_type_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, cell_cd",
+        "cnt": "6.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "13.0"
+      },
+      {
+        "op": "Join: barcd_1;Constant: barcd_1, ced_ev_type_id, email_address_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, ev_captrd_dt",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: barcd_1, ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Constant: email_address_id",
+        "cnt": "5.0"
+      },
+      {
+        "op": "Join: barcd_4;Constant: barcd_1, barcd_2, barcd_3, barcd_4, ced_ev_type_id, create_ts",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: ced_ev_type_id, email_address_id, launch_id, srcsys_campn_id",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Constant: ev_captrd_dt, launch_id",
+        "cnt": "8.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, email_address_id, ev_captrd_dt",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: ced_ev_type_id",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: barcd_1, email_address_id;Constant: barcd_1, ced_ev_type_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: email_address_id, ev_captrd_dt",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: email_address_id, launch_id;Constant: ced_ev_type_id, concept_format_id, ev_captrd_dt, launch_id",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Join: email_address_id;Constant: barcd_1, ced_ev_type_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: cell_cd, ev_captrd_dt, launch_id",
+        "cnt": "3.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, cell_cd, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ev_captrd_dt",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: cell_cd",
+        "cnt": "4.0"
+      },
+      {
+        "op": "Constant: barcd_1, ced_ev_type_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: email_address_id, launch_id;Constant: ced_ev_type_id, ev_captrd_dt, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: barcd_1, ced_ev_type_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: concept_format_id, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: concept_format_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, cell_cd, ev_captrd_dt, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: ced_ev_type_id, concept_format_id, email_address_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: cell_cd",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Join: barcd_1, launch_id;Constant: barcd_1, ced_ev_type_id, concept_format_id, ev_captrd_dt",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Join: launch_id;Constant: email_address_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, concept_format_id, ev_captrd_dt, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, email_address_id, ev_captrd_dt, launch_id",
+        "cnt": "1.0"
+      },
+      {
+        "op": "Constant: ced_ev_type_id, email_address_id",
+        "cnt": "1.0"
+      }
+    ],
+    "a": "ev_captrd_dt, ced_ev_type_id, concept_format_id, email_address_id"
+  },
+  {
+    "schema": "comm_lrg_tb",
+    "table_name": "item_sku_prc_cst_hist",
+    "f0_": [
+      {
+        "op": "Join: item_prc_eff_start_date_key, item_prc_eff_start_tm, item_sku_key, location_id",
+        "cnt": "64.0"
+      },
+      {
+        "op": "Join: item_sku_key, location_id;Constant: item_prc_eff_end_dt",
+        "cnt": "32.0"
+      },
+      {
+        "op": "Join: item_prc_eff_end_date_key",
+        "cnt": "32.0"
+      }
+    ],
+    "a": "item_prc_eff_end_dt"
+  },
+  {
+    "schema": "cust_tb",
+    "table_name": "ced_ev_hdr",
+    "f0_": [
+      {
+        "op": "Constant: create_ts, update_ts",
+        "cnt": "128.0"
+      },
+      {
+        "op": "Join: ri_id;Constant: email_address_id",
+        "cnt": "32.0"
+      },
+      {
+        "op": "Join: acct_id, launch_id;Constant: concept_format_id",
+        "cnt": "32.0"
+      }
+    ],
+    "a": "create_ts, update_ts"
+  },
+  {
+    "schema": "cust_tb",
+    "table_name": "ced_ev_sent_fail_skip",
+    "f0_": [
+      {
+        "op": "Constant: create_ts, update_ts",
+        "cnt": "128.0"
+      }
+    ],
+    "a": "create_ts, update_ts"
+  },
+  {
+    "schema": "dw_mcf_hist_stg",
+    "table_name": "pspfttdw_hist",
+    "f0_": [
+      {
+        "op": "Join: trans_dt, trans_nbr, trans_str, trans_term;Constant: str_type",
+        "cnt": "64.0"
+      },
+      {
+        "op": "Constant: seq_nbr, trans_dt, trans_nbr, trans_str, trans_term",
+        "cnt": "2.0"
+      },
+      {
+        "op": "Constant: str_type",
+        "cnt": "1.0"
+      }
+    ],
+    "a": "str_type"
+  },
+  {
+    "schema": "edw_mcf_vw",
+    "table_name": "item_sku_prc_cst_hist",
+    "f0_": [
+      {
+        "op": "Constant: create_process_cd, item_prc_eff_end_dt",
+        "cnt": "64.0"
+      },
+      {
+        "op": "Join: item_sku_key, location_id",
+        "cnt": "64.0"
+      }
+    ],
+    "a": "create_process_cd, item_prc_eff_end_dt"
+  }
+]
